@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>SHAIMUN ISLAM REDOY | Portfolio</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript (deferred) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <a href="#about" class="logo">SHAIMUN<span class="logo-dot">.</span></a>
+
+                <!-- Desktop Nav Links (Sequence: About -> Education -> Skills -> Projects -> Research -> Certifications -> Contact) -->
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#certifications">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Nav Actions: Theme Toggle + Hamburger -->
+                <div class="nav-actions">
+                    <button class="theme-toggle" aria-label="Toggle dark/light theme">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    </button>
+                    <button class="hamburger" aria-label="Open mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== 1. ABOUT / HERO SECTION ========== -->
+        <section id="about" class="section hero-section">
+            <div class="section-container hero-grid">
+
+                <!-- Left Column: Text Content -->
+                <div class="hero-content fade-in">
+                    <p class="hero-greeting">Welcome to my portfolio</p>
+                    <h1 class="hero-name">Hi, I'm <span class="gradient-text">SHAIMUN ISLAM REDOY</span></h1>
+                    <p class="hero-tagline">Aspiring Machine Learning Engineer &amp; Computer Science Student</p>
+                    <p class="hero-description">
+                        Computer Science and Engineering undergraduate at Southeast University (graduating June 2027) with a strong foundation in Python, C/C++, and relational databases, seeking a Machine Learning Engineer opportunity[cite: 4]. Research interests include Medical AI, Computer Vision, Federated Learning, and Multimodal learning[cite: 4]. Built end-to-end software and hardware projects covering database design, backend logic, and user interfaces[cite: 4]. Passionate, lifelong learner motivated to apply machine learning to real-world healthcare problems[cite: 4].
+                    </p>
+
+                    <!-- CTA Buttons (View CV with Google Drive Link) -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="https://drive.google.com/file/d/1oMCW1SsKUnvNMI-ib7gNswMp37vGlbMx/view?usp=drive_open" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-right: 8px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                            View CV
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/Shaimun17" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shaimun-islam-redoy-435683282" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:shaimun287@gmail.com" aria-label="Email">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Avatar Component -->
+                <div class="hero-avatar-wrap fade-in">
+                    <div class="avatar-component">
+                        <div class="orbit orbit--outer" aria-hidden="true"></div>
+                        <div class="orbit orbit--inner" aria-hidden="true"></div>
+                        <div class="avatar-glow" aria-hidden="true"></div>
+
+                        <div class="avatar-photo">
+                            <img src="assets/profile.png" alt="Shaimun Islam Redoy portrait">
+                        </div>
+
+                        <div class="float-badge badge--tl">
+                            <span class="badge-inner badge-orange">ML / AI</span>
+                        </div>
+                        <div class="float-badge badge--tr">
+                            <span class="badge-inner badge-orange">Medical AI</span>
+                        </div>
+                        <div class="float-badge badge--bl">
+                            <span class="badge-inner badge-blue">OpenCV</span>
+                        </div>
+                        <div class="float-badge badge--br">
+                            <span class="badge-inner badge-blue">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== 2. EDUCATION SECTION ========== -->
+        <section id="education" class="section">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-bg-text" aria-hidden="true">Education</span>
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic Qualifications &amp; Results</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Entry 1: BSc CSE -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot current"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">Expected June 2027</span>
+                            <h3 class="timeline-degree">Bachelor of Science in Computer Science and Engineering</h3>
+                            <p class="timeline-institution">Southeast University, Dhaka, Bangladesh</p>
+                            <p class="education-result">CGPA: 3.62 / 4.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Entry 2: HSC -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021</span>
+                            <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+                            <p class="timeline-institution">Mirpur Cantonment Public School &amp; College</p>
+                            <p class="education-result">GPA: 5.00 / 5.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Entry 3: SSC -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2019</span>
+                            <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+                            <p class="timeline-institution">Adamjee Cantonment Public School</p>
+                            <p class="education-result">GPA: 4.89 / 5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 3. SKILLS SECTION ========== -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-bg-text" aria-hidden="true">Skills</span>
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">Technical Skills &amp; Expertise</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Card 1: AI & Computer Vision -->
+                    <div class="skill-card fade-in">
+                        <h3 class="skill-category">AI &amp; Computer Vision</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">YOLO</span>
+                            <span class="skill-tag">Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Programming (Screenshot + JavaScript + PHP) -->
+                    <div class="skill-card fade-in">
+                        <h3 class="skill-category">Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Frontend -->
+                    <div class="skill-card fade-in">
+                        <h3 class="skill-category">Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Tools & Platforms -->
+                    <div class="skill-card fade-in">
+                        <h3 class="skill-category">Tools &amp; Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Vercel</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Core CS -->
+                    <div class="skill-card fade-in">
+                        <h3 class="skill-category">Core CS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">DBMS</span>
+                            <span class="skill-tag">Computer Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 4. PROJECTS SECTION ========== -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-bg-text" aria-hidden="true">Projects</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Practical software and hardware systems built end-to-end</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Software Project -->
+                    <div class="project-card fade-in">
+                        <div>
+                            <div class="project-header">
+                                <span class="project-badge">Software Project</span>
+                                <a href="https://github.com/Shaimun17" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Link">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">Hospital Management System</h3>
+                            <p class="project-role">Role: Sole Developer (Frontend &amp; Backend)</p>
+                            <p class="project-desc">
+                                Developed a web-based system that centralizes and organizes hospital operations for easier management[cite: 4]. Built the entire workflow including frontend user interfaces and backend logic connected to a relational database[cite: 4].
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Hardware Project -->
+                    <div class="project-card fade-in">
+                        <div>
+                            <div class="project-header">
+                                <span class="project-badge">Hardware Project</span>
+                                <a href="https://github.com/Shaimun17" target="_blank" rel="noopener" class="project-link" aria-label="GitHub Link">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">Smart Medicine Reminder System</h3>
+                            <p class="project-role">Role: System &amp; Hardware Circuit Design</p>
+                            <p class="project-desc">
+                                Built a hardware-based reminder system that tracks medicine schedules and alerts users at the correct time[cite: 4]. Designed to assist patients in taking medications systematically without missing doses[cite: 4].
+                            </p>
+                        </div>
+                        <div class="project-tags">
+                            <span>Embedded System</span>
+                            <span>Microcontroller</span>
+                            <span>Sensors &amp; RTC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 5. RESEARCH INTERESTS SECTION ========== -->
+        <section id="research" class="section">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-bg-text" aria-hidden="true">Research</span>
+                    <h2 class="section-title">Research Interests</h2>
+                    <p class="section-subtitle">Academic focus areas, investigative inquiry, and theoretical fields</p>
+                </div>
+
+                <div class="research-grid">
+                    <div class="research-card fade-in">
+                        <div class="research-icon">🩺</div>
+                        <h3>Medical AI</h3>
+                        <p>Clinical decision support, computational pathology, and diagnostic healthcare intelligence.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+                        <p>Image processing, visual perception algorithms, object classification, and spatial tracking with OpenCV.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">🌐</div>
+                        <h3>Federated Learning</h3>
+                        <p>Decentralized collaborative machine learning systems preserving localized data privacy.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">🔀</div>
+                        <h3>Multimodal Learning</h3>
+                        <p>Joint feature integration combining visual, acoustic, and text representations for comprehensive inference.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">🧠</div>
+                        <h3>Deep Learning</h3>
+                        <p>Neural networks, layered feature extraction, convolutional models, and representation learning.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">⚖️</div>
+                        <h3>Fuzzy Logic</h3>
+                        <p>Approximate reasoning algorithms, non-binary inference systems, and rule-based decision modeling.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">🤖
+</div>
+                        <h3>Convolutional Neural Network (CNN)</h3>
+                        <p>Image classification, object detection, and facial recognition.</p>
+                    </div>
+
+                    <div class="research-card fade-in">
+                        <div class="research-icon">💬</div>
+                        <h3>Natural Language Processing (NLP)</h3>
+                        <p>Sequence models, semantic understanding, text analytics, and language understanding pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 6. CERTIFICATIONS SECTION ========== -->
+        <section id="certifications" class="section">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-bg-text" aria-hidden="true">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">Verified professional completions and certified course credentials</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Coursera Certificate -->
+                    <div class="cert-card fade-in">
+                        <div>
+                            <div class="cert-meta">
+                                <span class="cert-issuer">Coursera</span>
+                                <span class="cert-year">Verified</span>
+                            </div>
+                            <h3 class="cert-title">Coursera Course Certificate</h3>
+                            <p class="cert-desc">Verified completion credential covering foundational principles and computational applications.</p>
+                        </div>
+                        <a href="https://coursera.org/verify/R1JVZ93D7UWV" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify on Coursera &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Udemy Certificate -->
+                    <div class="cert-card fade-in">
+                        <div>
+                            <div class="cert-meta">
+                                <span class="cert-issuer">Udemy</span>
+                                <span class="cert-year">Verified</span>
+                            </div>
+                            <h3 class="cert-title">Udemy Course Completion Certificate</h3>
+                            <p class="cert-desc">Hands-on technical implementation coursework and verified milestone certificate.</p>
+                        </div>
+                        <a href="https://www.udemy.com/certificate/UC-048b3eca-3af3-4061-8d4d-d2495d45f925/" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify on Udemy &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 7. CONTACT SECTION ========== -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <div class="section-header fade-in">
+                    <span class="section-bg-text" aria-hidden="true">Contact</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have an opportunity or inquiry? Drop me a line directly!</p>
+                </div>
+
+                <div class="contact-grid fade-in">
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:shaimun287@gmail.com">shaimun287@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+8801774635408">+880 1774635408</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                                <div class="char-count">0 / 500</div>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="section-container footer-content">
+            <p>&copy; 2026 SHAIMUN ISLAM REDOY. All rights reserved.</p>
+            <p>Designed with <span class="footer-heart">&hearts;</span></p>
+            <p class="footer-note">Built with vanilla HTML, CSS &amp; JS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
