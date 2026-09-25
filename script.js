@@ -286,4 +286,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', highlightActiveLink, { passive: true });
         highlightActiveLink(); // Set initial state
     }
+    // Performance monitoring for scroll events
+console.log('Scroll listeners initialized with passive configuration for optimal FPS.');
 });
